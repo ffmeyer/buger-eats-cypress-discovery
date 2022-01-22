@@ -1,0 +1,20 @@
+{
+  "name": "buger-eats",
+  "version": "1.0.0",
+  "description": "Projeto de testes de aceitacao do app bugerEats",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "Felipe Meyer",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress-file-upload": "^5.0.8"
+  },
+  "dependencies": {
+    "cypress": "^9.3.1",
+    "faker": "^6.6.6",
+    "gerador-validador-cpf": "^5.0.2",
+    "nodemon": "^2.0.15"
+  }
+}
