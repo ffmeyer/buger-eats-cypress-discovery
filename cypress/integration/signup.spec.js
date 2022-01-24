@@ -39,12 +39,12 @@ describe('cadastro', function () {
 
     it('Incorrect document', function () {
         var deliver = signUpFactory.deliver()
-        deliver.cpf = '00000014141'
+        deliver.cpf = 'X00000141AA'
         signup.go();
         signup.fillForm(deliver);
         signup.submit();
 
-        const expectedMessage = 'É necessário informar o CPF'
+        const expectedMessage = 'Oops! CPF inválido'
         signup.alertMessageShouldBe(expectedMessage)
     })
 

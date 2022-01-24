@@ -30,9 +30,8 @@ class SignupPage{
 
 
     modalContentShouldBe(expectedMesssage){
-        //cy.get('.swal2-container .swal2-html-container')
-        //cy.get('#swal2-container')        
-        //    .should('have.text'. expectedMesssage)
+        cy.get('.swal2-container .swal2-html-container')        
+            .should('have.text', expectedMesssage)
         }
 
     alertMessageShouldBe(expectedMessage){
